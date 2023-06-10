@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>KITHAB- register for more content</title>
+    <link rel="icon" type="image"  href="logo1.jpg">
+
+<style>
+    .About-us {
+	  width: 100%;
+	  text-align: center;
+	
+	  margin-top: 30px;
+	  margin-bottom: 30px;
+	 
+      
+	}
+	h1{
+	  color:#7f7f7f;
+	  font-size: 35px;
+	}
+	img {
+	 
+      height: auto;
+      width:800px ;
+      
+	}
+	
+	p {
+	  font-size: 26px;
+	} 
+    h3 {
+	  text-shadow:black;
+    color: #878c8c;
+	}
+    a {
+      padding: 20px;
+	  text-align: center;
+	  text-decoration: none;
+	  margin: 5px 2px;
+	  background: black;
+      color: white;
+	  border-radius: 8px;
+	 font-size: 50px;	  
+   } 
+   #navbar{
+      display: none;
+   }
+   #bar{
+    display: none;
+   }
+@media(max-width:425px)
+{
+	.About-us {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+img {
+    height: auto;
+    width: 360px;
+    
+}
+p {
+    font-size: 16px;
+    margin-inline: 14px;
+}
+.about{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 100px;
+}
+#bar{
+  font-size: 20px;
+}
+
+#navbar{
+      display:flex;
+      flex-direction:column;
+      align-items: center;
+      
+      position: fixed;
+      top: 0;
+      right:-100vw;
+      height:100vh ;
+      width: 100vw;
+      background-color: #ffffffe3;
+      box-shadow: 0 40px 60px rgba(0,0,0, 0.06);
+      padding: 80px 0 0 0px;
+      transition: 0.6s ease;
+      z-index: 1;
+   }
+   #navbar.active{
+      right: 0px;
+   }
+   #close{
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      color: black;
+      font-size: 24px;
+      display: initial;
+      
+    }
+    
+    .title h1{
+        font-size: 60px;
+    }
+    #mobile{
+        padding: 10px;
+        display: initial;
+    }
+    .main p {
+    display: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 15px 10px;
+    margin-bottom: 50px;
+    display: block;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    transition: 0.6s ease-in-out;
+}
+a {
+      padding: 13px;
+	   
+   } 
+
+ul li{
+  list-style: none;
+}
+ul{
+  margin: 0%;
+}
+.about a{
+	background:transparent;
+}
+#bar{
+    display:initial;
+   }
+}
+</style>
+</head>
+<body>
+  <div class="About-us">
+	<div class="about">
+		
+		 <h1> About Us </h1>
+		 <ul id="navbar">
+			<li class="home"><a href="about.html">ABOUT</a></li>
+			<li class="home"><a href="author.html">AUTHOR</a></li>
+			
+			<li class="home"><a href="booklist.html">NOVELS</a></li>
+			
+			<li class="home"><a href="homePage.html">HOME</a></li>
+			<a href="#" id="close"><i class="fa fa-times"></i></a>
+		   
+		</ul>
+		<div id="mobile">
+			
+			<i id="bar" class="fa fa-bars"></i>
+		</div>
+	</div>
+   
+	<img src="about1.jpg">
+	<p>Our mission is to empower young Students to be the inventors and creators.</p>
+	<hr>
+	<p>In a world where so much is being done for technology and so little for the environment, education is not even a part of most discussions.</p>
+    <p>We at Studytonight believe that by widening the reach of education, by making it freely available, so much can be achieved.</p>
+    
+   <h3> follow us on </h3>
+   <a href="#" class="fa fa-facebook"></a> 
+   <a href="#" class="fa fa-twitter"></a> 
+   <a href="#" class="fa fa-linkedin"></a> 
+  </div>
+  <script >
+	const bar= document.getElementById('bar');
+	const close= document.getElementById('close');
+	const nav= document.getElementById('navbar');
+  
+	if(bar){
+		bar.addEventListener('click',()=>{
+			nav.classList.add('active');
+		})
+	}
+	if(close){
+		close.addEventListener('click',()=>{
+			nav.classList.remove('active');
+		})
+	}
+	
+  
+  
+  </script>
+</body>
+</html>

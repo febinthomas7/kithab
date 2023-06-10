@@ -1,0 +1,155 @@
+body
+{
+    background-image: linear-gradient(rgba(183, 166, 166, 0.5),rgb(56, 54, 53)),  url(../website/reading.png); 
+    background-repeat:no-repeat ;
+    height: 100%;
+    background-size: cover;
+    
+   
+}
+.container
+{
+    border:2px solid rgb(238, 232, 232);
+    height: 100%;
+    width: 30%;
+    background-color: white;
+    margin: 30px auto;
+    padding: 40px;
+}
+.container .title
+{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    color:black;
+    font-size:15px;
+    text-align: center;
+}
+.container.form
+{
+    width: 100%;
+}
+
+.container .form .input_field.input
+{
+    margin-bottom: 15px;
+    display: flex;
+    
+    
+}
+.container .form .input_field label
+
+{
+  
+  margin-right: 15px;
+ 
+  font-size: 15px;
+
+}
+
+
+.container .form .input_field .btn
+{
+    
+    
+    
+    
+    width: 100%;
+    cursor:pointer;
+    
+
+}
+
+
+.container .form .input_field input
+{
+    
+    width:100%;
+    border:1px solid rgba(15, 70, 45, 0.371);
+    outline:none;
+    border-radius:3px;
+    padding:5px;
+    transition: all 0.5s ease;
+}
+.container .form .input_field .register input
+{
+    
+    width:50%;
+   
+    outline:none;
+    border-radius:3px;
+    padding:5px;
+    transition: all 0.5s ease;
+}
+.container .form .input_field .textarea
+{
+    resize:none;
+    position:relative;
+    outline:none;
+    border:  1px solid rgba(15, 70, 45, 0.371);
+    height:70px;
+    border-radius:3px;
+    width:100%;
+
+}
+.container .form .input_field .selectbox
+{
+    width:100%;
+    border-radius:3px;
+    border:1px solid  rgba(15, 70, 45, 0.371);
+    outline:none;
+    padding:5px;
+    height:30px;
+}
+.container .form .input_field input:focus,
+.container .form .input_field .textarea:focus,
+.container .form .input_field .selectbox:focus
+{
+    border:1px solid green;
+
+}
+.container .form .input_field p
+{
+    font-size:15px;
+    color:grey;
+}
+.container .form .input_field .check
+{
+    cursor:pointer;
+    width:20px;
+    height:20px;
+    position:relative;
+    display:block;
+}
+.container .form .input_field .check input[type="checkbox"]
+{
+    color:rgba(15, 70, 45, 0.371);
+    position:absolute;
+}
+.container .form .input_field .check .checkmark
+{
+    
+    width:15px;
+    height:15px;
+    position:relative;
+    display:block;
+    border:1px solid (15, 70, 45, 0.371);
+
+}
+@media (max-width:420px)
+{
+    .container .form .input_field
+   {
+    flex-direction:column;
+    align-items:flex-start;
+   }
+   .container .form .input_field label
+   {
+    margin-bottom:5px;
+   }
+   .container .form .input_field .terms
+   {
+    flex-direction:row;
+   }
+
+
+}

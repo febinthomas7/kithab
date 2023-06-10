@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>KITHAB- Book List</title>
+    <link rel="icon" type="image"  href="logo1.jpg">
+<style>
+  *{
+    box-sizing: border-box;
+  }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 22px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.book{
+  display: flex;
+}
+#mobile{
+        display: none;
+    }
+    #navbar{
+     display: none;
+   }
+
+
+@media(max-width:425px){
+    
+#navbar{
+      display:flex;
+      flex-direction:column;
+      align-items: center;
+      
+      position: fixed;
+      top: 0;
+      right:-100vw;
+      height:100vh ;
+      width: 100vw;
+      background-color: white;
+      box-shadow: 0 40px 60px rgba(0,0,0, 0.06);
+      padding: 80px 0 0 0px;
+      transition: 0.6s ease;
+      z-index: 1;
+   }
+   td, th {
+  
+  font-size: 20px;
+}
+   #navbar.active{
+      right: 0px;
+   }
+   #close{
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      color: black;
+      font-size: 24px;
+      display: initial;
+      
+    }
+    
+    .title h1{
+        font-size: 60px;
+    }
+    #mobile{
+        padding: 10px;
+        display: initial;
+    }
+    
+ul li a {
+    
+    color: black;
+    margin-bottom: 50px;
+    
+}
+.book{
+  display: flex;
+  justify-content: space-between;
+    align-items: center;
+}
+#bar{
+  font-size: 20px;
+}
+#navbar{
+  margin: 0%;
+}
+#mobile{
+        padding: 10px;
+        display: initial;
+    }
+ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 15px 10px;
+    margin-right: 10px;
+    display: block;
+    align-items: center;
+    display: flex;
+    font-size: larger;
+    transition: 0.6s ease;
+}
+ul li{
+  list-style: none;
+}
+
+}
+</style>
+</head>
+<body>
+<div class="book">
+  <h1>BOOK LIST</h1>
+  <ul id="navbar">
+    <li class="home"><a href="about.html">ABOUT</a></li>
+    <li class="home"><a href="author.html">AUTHOR</a></li>
+    
+    <li class="home"><a href="booklist.html">UPDATED BOOKS</a></li>
+    <li class="home"><a href="book.html">BOOK</a></li>
+    <li class="home"><a href="homePage.html">HOME</a></li>
+    <a href="#" id="close"><i class="fa fa-times"></i></a>
+   
+</ul>
+<div id="mobile">
+    
+    <i id="bar" class="fa fa-bars"></i>
+</div>
+</div>
+
+<hr>
+
+<table>
+  <tr>
+    <th>TYPES</th>
+    <th>NO OF BOOKS</th>
+    
+  </tr>
+  <tr>
+    <td>1.romance</td>
+    <td>7129</td>
+ 
+  </tr>
+  <tr>
+    <td>2.fiction</td>
+    <td>6793</td>
+   
+  </tr>
+  <tr>
+    <td>3.fantasy</td>
+    <td>4533</td>
+   
+  </tr>
+  <tr>
+    <td>4.young-adult</td>
+    <td>5522</td>
+    
+  </tr>
+  <tr>
+    <td>5.children</td>
+    <td>2239</td>
+  
+  </tr>
+  <tr>
+    <td>6.history</td>
+    <td>2084</td>
+    
+  </tr>
+  <tr>
+    <td>7.horror</td>
+    <td>2000</td>
+    
+  </tr>
+  <tr>
+    <td>8.biography</td>
+    <td>2084</td>
+    
+  </tr>
+  <tr>
+    <td>9.ghraphic-novel</td>
+    <td>2084</td>
+    
+  </tr>
+  <tr>
+    <td>10.mystery</td>
+    <td>1339</td>
+    
+  </tr>
+</table>
+<script >
+  const bar= document.getElementById('bar');
+  const close= document.getElementById('close');
+  const nav= document.getElementById('navbar');
+
+  if(bar){
+      bar.addEventListener('click',()=>{
+          nav.classList.add('active');
+      })
+  }
+  if(close){
+      close.addEventListener('click',()=>{
+          nav.classList.remove('active');
+      })
+  }
+  
+
+
+</script>
+
+</body>
+</html>

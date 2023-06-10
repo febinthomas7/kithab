@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>KITHAB- Novels </title>
+  
+    <link rel="icon" type="image"  href="logo1.jpg">
+    
+    <style>
+* {
+  box-sizing: border-box;
+}
+        
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-around;
+
+ 
+  
+}
+
+
+
+.fakeimg img{
+  height: 400px;
+  width: 300px;
+  box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
+   margin: 15PX;
+   border: 5px solid black;
+  
+  
+}
+
+
+.card {
+  
+  padding: 20px;
+  /* border: 10px solid black; */
+  width: 100%;
+  height: auto;
+ 
+  
+}
+.card p{
+    color: rgb(19, 1, 1);
+    margin-left: 45px;
+}
+body{
+    background-color: rgba(245, 244, 244, 0.618);
+}
+.card h2{
+  color: #717171;
+}
+ul{
+  display: none;
+}
+#mobile{
+  display: none;
+}
+
+h1{
+  align-items: center;
+  text-align: center;
+}
+@media(max-width:425px){
+  .fakeimg{
+  width: 273px;
+  
+}
+#bar{
+  font-size: 20px;
+}
+.grid {
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+.fakeimg img{
+  height: 400px;
+  width: 100%;
+  box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
+  
+   margin:10px 0 10px 0 ;
+   border: 5px solid black;
+  
+  
+}
+h1{
+  font-size: 25px;
+  padding: 0 16px;
+}
+#navbar{
+      display:flex;
+      flex-direction:column;
+      align-items: center;
+      
+      position: fixed;
+      top: 0;
+      right:-100vw;
+      height:100vh ;
+      width: 100vw;
+      background-color: #ffffffe3;
+      box-shadow: 0 40px 60px rgba(0,0,0, 0.06);
+      padding: 80px 0 0 0px;
+      transition: 0.6s ease;
+      z-index: 1;
+   }
+   #navbar.active{
+      right: 0px;
+   }
+   #close{
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      color: black;
+      font-size: 24px;
+      display: initial;
+      
+    }
+    ul{
+      display: initial;
+    }
+    
+    .title h1{
+        font-size: 60px;
+    }
+    #mobile{
+        padding: 10px;
+        display: initial;
+    }
+ 
+ul li a {
+    
+    color: black;
+    
+}
+.head{
+  display: flex;
+  align-items: center;
+      justify-content: space-between;
+      position: fixed;
+    width: -webkit-fill-available;
+    background-color: whitesmoke;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 5px 19px black;
+}
+ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 15px 10px;
+    
+    margin-bottom: 50px;
+    display: block;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    transition: 0.6s ease-in-out;
+}
+
+ul li{
+  list-style: none;
+}
+ul{
+  margin: 0%;
+}
+.card {
+   
+    /* margin-top: 60px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 5px solid #4b4949; */
+}
+.card:nth-child(1){
+  margin-top: 60px;
+}
+body{
+  
+  background-color: #4a0303;
+  margin: 0;
+}
+
+}
+
+    </style>
+</head>
+<body>
+  <div class="head">
+    <h1>NOVELS</h1>
+    <ul id="navbar">
+      <li class="home "><a href="homePage.html">HOME</a></li>
+      
+     
+      
+      <li class="home"><a href="booklist.html">NOVELS</a></li>
+      <li class="home"><a href="author.html">AUTHOR</a></li>
+      <li class="home"><a href="about.html">ABOUT</a></li>
+      <a href="#" id="close"><i class="fa fa-times"></i></a>
+     
+  </ul>
+  <div id="mobile">
+      
+      <i id="bar" class="fa fa-bars"></i>
+  </div>
+
+  </div>
+    
+
+    <hr>
+    
+<div class="row ">
+    <div class="col-md-4">
+      <div class="card" >
+        <!-- <h2>YOUR TOP MIXES</h2> -->
+     
+        <div class="grid">
+        <div class="fakeimg"><a href="details19.html"><img class="image" src="book6.jpg"></a></div>
+      
+        <div class="fakeimg"><a href="details15.html"><img    class="image" src="book2.jpg"></a></div>
+        
+         <div class="fakeimg"><a href="details16.html"><img  class="image" src="book3.jpg"></a> </div>
+         
+         <div class="fakeimg"><a href="details17.html"><img  class="image" src="book4.jpg"></a></div>
+         
+        
+        </div>
+      </div>
+      
+      <div class="card">
+        <!-- <h2>MORE OF WHAT YOU LIKE</h2> -->
+        
+        <div class="grid">
+        <div class="fakeimg"><a href="details14.html"><img class="image" src="It ends with Us (Colleen Hoover).jpg"></a> </div>
+       <div class="fakeimg"><a href="details2.html"><img class="image" src="As Good as Dead.jpeg"></a></div>
+        <div class="fakeimg"><a href="details18.html"><img class="image" src="book5.jpg"></a></div>
+        <div class="fakeimg"><a href="details1.html"><img class="image" src="book10.jpg"></a> </div>
+          </div>   
+       
+      </div>
+    
+    <div class="card">
+      <!-- <h2>TODAY'S BIGGEST HITS</h2> -->
+      
+      <div class="grid">
+      <div class="fakeimg"><a href="details3.html"><img class="image" src="twisted-love.jpg"></a></div>
+      <div class="fakeimg"><a href="details4.html"><img class="image" src="Twisted Games.jpg"></a></div>
+      <div class="fakeimg"><a href="details5.html"><img class="image" src="twisted-hate.jpg"></a></div>
+      <div class="fakeimg"><a href="details6.html"><img class="image" src="twisted-lies.jpg"></a></div>
+     
+      </div>
+    </div>
+
+    <div class="card">
+      <!-- <h2>TODAY'S BIGGEST HITS</h2> -->
+      
+      <div class="grid">
+      <div class="fakeimg"><a href="details7.html"><img class="image" src="Good girl's guide to murder.jpg"></a></div>
+      <div class="fakeimg"><a href="details.html"><img class="image" src="The Strength in Our Scars (Bianca Sparacino) (Z-Library).jpg"></a></div>
+      <div class="fakeimg"><a href="details8.html"><img class="image" src="The Sun and Her Flowers (Rupi Kaur) (Z-Library).jpg"></a></div>
+      <div class="fakeimg"><a href="details9.html"><img class="image" src="Milk and Honey (Rupi Kaur) (Z-Library).jpg"></a></div>
+
+      
+     
+      </div>
+    </div>
+
+
+    <div class="card">
+      <!-- <h2>TODAY'S BIGGEST HITS</h2> -->
+      
+      <div class="grid">
+        <div class="fakeimg"><a href="details10.html"><img class="image" src="Beyond Worthy (Jacqueline Whitney) (Z-Library).jpg"></a></div>
+      <div class="fakeimg"><a href="details11.html"><img class="image" src="Youre Not Enough (And Thats Okay) (Allie Beth Stuckey) (Z-Library).jpg"></a></div>
+      <div class="fakeimg"><a href="details12.html"><img class="image" src="The Princess Saves Herself in this One (Amanda Lovelace) (Z-Library).jpg"></a></div>
+      <div class="fakeimg"><a href="details13.html"><img class="image" src="Good girl, bad girl.jpg"></a></div>
+
+      
+      </div>
+    </div>
+
+    <div class="card">
+      <!-- <h2>TODAY'S BIGGEST HITS</h2> -->
+      
+      <div class="grid">
+        <div class="fakeimg"><a href="details20.html"><img class="image" src="book7.jpg"></a></div>
+      <div class="fakeimg"><a href="details21.html"><img class="image" src="book8.jpg"></a></div>
+      <div class="fakeimg"><a href="details22.html"><img class="image" src="book9.jpg"></a></div>
+
+      
+
+      
+      </div>
+    </div>
+
+
+
+    </div>
+</div>
+
+     <script src="navbar.js"></script>
+</body>
+</html>

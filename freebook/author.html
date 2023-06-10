@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>KITHAB- Featured Authors </title>
+    <link rel="icon" type="image"  href="logo1.jpg">
+ 
+    <style>
+*
+   {
+     margin :0;
+     padding:0;
+     
+     font-family: normal;
+   }
+   body
+   {
+      
+       background: rgb(255, 254, 254);
+   }
+   .gallery{
+    width: 50%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 60px;
+   }
+   img{
+       width: 50px;
+       height: 80px;
+       border-radius: 50%;
+       
+      
+      
+       background-repeat: no-repeat;
+       
+   }
+   hr{
+    border: 1px solid #ddd9d9;
+    margin-top: 50px;
+   }
+   .container h1{
+ 
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+   }
+   .gallery h2 {
+    
+    color: #787272;
+}
+   
+   .gallery img{
+    width:20% ;
+    margin-block: 20px;
+    
+   }
+   #navbar{
+      display: none;
+   }
+   #bar{
+    display: none;
+   }
+   @media(max-width:425px){
+    .container h1{
+ 
+ 
+ margin-top: 0px;
+}
+    .gallery {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 60px;
+}
+.gallery img {
+    width: 26%;
+    margin-block: 20px;
+   
+}
+.gallery h2 {
+    font-size: 20px;
+    color: #787272;
+}
+.author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    top: 0;
+    box-shadow: 0px -12px 30px black;
+    position: fixed;
+    width:-webkit-fill-available;
+    background-color: whitesmoke;
+}
+#navbar{
+      display:flex;
+      flex-direction:column;
+      align-items: center;
+      
+      position: fixed;
+      top: 0;
+      right:-100vw;
+      height:100vh ;
+      width: 100vw;
+      background-color: #ffffffe3;
+      box-shadow: 0 40px 60px rgba(0,0,0, 0.06);
+      padding: 80px 0 0 0px;
+      transition: 0.6s ease-in-out;
+      z-index: 1;
+   }
+   #navbar.active{
+      right: 0px;
+   }
+   #close{
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      color: black;
+      font-size: 24px;
+      display: initial;
+      
+    }
+    ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 15px 10px;
+    
+    margin-bottom: 50px;
+    display: block;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    transition: 0.6s ease;
+}
+
+ul li{
+  list-style: none;
+}
+.author h1{
+    font-size: 25px;
+}
+#bar{
+    display:initial;
+    font-size: 20px;
+   }
+   hr{
+    border: 1px solid #ddd9d9;
+    margin-top: 50px;
+   }
+}
+   
+   
+   
+</style>
+</head>
+<body>
+    
+    <div class="container">
+       
+      <div class="author">
+        <h1>FEATURED AUTHORS</h1>
+        <ul id="navbar">
+			<li class="home"><a href="about.html">ABOUT</a></li>
+			<li class="home"><a href="author.html">AUTHOR</a></li>
+			
+			<li class="home"><a href="booklist.html">NOVELS</a></li>
+			
+			<li class="home"><a href="homePage.html">HOME</a></li>
+			<a href="#" id="close"><i class="fa fa-times"></i></a>
+		   
+		</ul>
+		<div id="mobile">
+			
+			<i id="bar" class="fa fa-bars"></i>
+		</div>
+
+      </div>
+       
+        <hr>
+    <div class="gallery">
+        <div>
+            <h2>Arundhati Roy</h2>
+            <img src="pic1.jpg">
+    <p>
+        
+        Arundhati Roy is an Indian writer, best known for her book 
+        The God of Small Things (1997), which won the Man Booker 
+        Prize forFiction in 1997. She was born in Shillong, Meghalaya,
+        India. Her parents were Rajib Roy, a Bengali Hindu tea plantation
+    </p>
+    <hr>
+    
+    </div>
+
+
+    <div> 
+            <h2>William Wordsworth</h2>
+            <img src="pic2.jpg">
+
+         <p>
+        On April 7, 1770, William Wordsworth was conceived in Cockermouth,
+        Cumbria, England. Wordsworth's momkicked the bucket when he was 
+        eight—this experience shapesa lot of his later work. Wordsworth went
+        to Hawkshead Grammar School, where his adorat
+        </p>
+        <hr>
+    </div>
+
+
+    <div>  
+        <h2>John Green</h2>
+            <img src="pic3.jpg">
+        <p>
+            
+
+        John Michael Green is the author of Looking for Alaska, An Abundance
+        of Katherines, Paper Towns, and The Fault in Our Stars.He is an American
+         author, vlogger,writer, producer, actor and editor.He was born in
+          Indianapolis, Indiana on august 24
+        </p>
+        <hr>
+    </div>
+
+
+    <div>   
+        <h2>GAYLE FORMAN</h2>
+            <img src="pic4.jpg">
+       <p>
+        
+
+        Gayle Forman is an American young adult fiction author. She was 
+        born in June 5, 1978 in in Los Angeles. Her best known novel is If I Stay
+        which topped the New York bestseller list for young adult fiction category. 
+        It was later made into a film to
+       </p>
+       <hr>
+    </div>
+
+    <div>
+        <h2>SYLVIA PLATH</h2>
+            <img src="pic5.jpg">
+       <p>
+        
+
+        Sylvia Plath was born on 27 Oct, 1932 in Boston, US was an American 
+        poet,novelist , short story writer . She wrote poetry , friction and short 
+        stories.Her best work was confessional poetry in which she
+         wrote The colossus and other poems 
+       </p>
+       <hr>
+    </div>
+
+
+    <div>
+        <h2>PAULO COELHO</h2>
+            <img src="pic6.jpg">
+       <p>
+        
+
+        Paulo Coelho is irrefutably of the best writers of late circumstances, offering 
+        than 100 million books in no less than 150 nations globally. Paulo Coelho has 
+        met with a considerable measure of progress; 
+        his books have been generally decipher
+       </p>
+       <hr>
+    </div>
+    </div>
+    </div>
+    
+
+    <script >
+        const bar= document.getElementById('bar');
+        const close= document.getElementById('close');
+        const nav= document.getElementById('navbar');
+      
+        if(bar){
+            bar.addEventListener('click',()=>{
+                nav.classList.add('active');
+            })
+        }
+        if(close){
+            close.addEventListener('click',()=>{
+                nav.classList.remove('active');
+            })
+        }
+        
+      
+      
+      </script>
+</body>
+</html>
